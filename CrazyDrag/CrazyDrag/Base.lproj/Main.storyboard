@@ -86,6 +86,9 @@
                                 <state key="normal" title="再来一次">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="satrtOver:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="orV-3T-8N9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pVb-ZD-bIR">
                                 <rect key="frame" x="86" y="123" width="20" height="25"/>
@@ -107,13 +110,14 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="roundLabel" destination="bIv-mJ-Cq9" id="k2B-nl-eHF"/>
                         <outlet property="scoreLabel" destination="dK9-UI-dyN" id="I1Y-Hc-ADG"/>
                         <outlet property="targetNumber" destination="UJW-wL-T4W" id="0Xa-v3-WqV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="493"/>
+            <point key="canvasLocation" x="75" y="488"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
