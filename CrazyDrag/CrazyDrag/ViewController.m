@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AboutViewController.h"
 
 @interface ViewController (){
     int currentValue;
@@ -79,6 +80,12 @@
 - (IBAction)satrtOver:(id)sender {
     [self startNewGame];
     [self updataLabels];
+}
+
+- (IBAction)showInfo:(id)sender {
+    AboutViewController *controller = [[AboutViewController alloc]initWithNibName:@"AboutViewController" bundle:nil];
+    controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end

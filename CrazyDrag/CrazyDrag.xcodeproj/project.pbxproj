@@ -14,6 +14,8 @@
 		04B036291BAE9FBE00237344 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B036281BAE9FBE00237344 /* Images.xcassets */; };
 		04B0362C1BAE9FBE00237344 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0362A1BAE9FBE00237344 /* LaunchScreen.xib */; };
 		04B036381BAE9FBE00237344 /* CrazyDragTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B036371BAE9FBE00237344 /* CrazyDragTests.m */; };
+		04B0364C1BAEE50800237344 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0364A1BAEE50800237344 /* AboutViewController.m */; };
+		04B0364D1BAEE50800237344 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0364B1BAEE50800237344 /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		04B036311BAE9FBE00237344 /* CrazyDragTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyDragTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B036361BAE9FBE00237344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B036371BAE9FBE00237344 /* CrazyDragTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyDragTests.m; sourceTree = "<group>"; };
+		04B036491BAEE50800237344 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		04B0364A1BAEE50800237344 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		04B0364B1BAEE50800237344 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,9 @@
 			children = (
 				04B036221BAE9FBE00237344 /* ViewController.h */,
 				04B036231BAE9FBE00237344 /* ViewController.m */,
+				04B036491BAEE50800237344 /* AboutViewController.h */,
+				04B0364A1BAEE50800237344 /* AboutViewController.m */,
+				04B0364B1BAEE50800237344 /* AboutViewController.xib */,
 				04B036251BAE9FBE00237344 /* Main.storyboard */,
 				04B036281BAE9FBE00237344 /* Images.xcassets */,
 				04B0362A1BAE9FBE00237344 /* LaunchScreen.xib */,
@@ -201,6 +209,7 @@
 			files = (
 				04B036271BAE9FBE00237344 /* Main.storyboard in Resources */,
 				04B0362C1BAE9FBE00237344 /* LaunchScreen.xib in Resources */,
+				04B0364D1BAEE50800237344 /* AboutViewController.xib in Resources */,
 				04B036291BAE9FBE00237344 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 			files = (
 				04B036241BAE9FBE00237344 /* ViewController.m in Sources */,
 				04B036211BAE9FBE00237344 /* AppDelegate.m in Sources */,
+				04B0364C1BAEE50800237344 /* AboutViewController.m in Sources */,
 				04B0361E1BAE9FBE00237344 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
