@@ -82,7 +82,7 @@
 
 - (IBAction)sliderMoved:(id)sender {
     UISlider *slider = sender;
-    currentValue = lroundf(slider.value);
+    currentValue = (int)lroundf(slider.value);
     NSLog(@"当前滑动条数值为:%d",currentValue);
     //self.sliderNumber.text = [NSString stringWithFormat:@"%d",currentValue];
 }
@@ -93,8 +93,16 @@
 }
 
 - (IBAction)satrtOver:(id)sender {
+
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionFade;
+    transition.duration = 3;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+
     [self startNewGame];
     [self updataLabels];
+
+    [self.view.layer addAnimation:transition forKey:nil];
 }
 
 - (IBAction)showInfo:(id)sender {
