@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *targetNumber;
 @property (strong, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *roundLabel;
+@property (strong, nonatomic) IBOutlet UISlider *slider;
 
 
 @end
@@ -46,7 +47,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    UIImage *thumbImageNormal = [UIImage imageNamed:@"SliderThumb-Normal"];
+    [self.slider setThumbImage:thumbImageNormal forState:UIControlStateNormal];
+
+    UIImage *thumbUmageHighlighted = [UIImage imageNamed:@"SliderThumbHighlighted"];
+    [self.slider setThumbImage:thumbUmageHighlighted forState:UIControlStateHighlighted];
+
+    UIImage *trackLeftImage = [[UIImage imageNamed:@"SliderTrackLeft"]stretchableImageWithLeftCapWidth:14 topCapHeight:0];
+    [self.slider setMinimumTrackImage:trackLeftImage forState:UIControlStateNormal];
+
+    UIImage *trackRightImage = [[UIImage imageNamed:@"SliderTrackRight"]stretchableImageWithLeftCapWidth:14 topCapHeight:0];
+    [self.slider setMaximumTrackImage:trackRightImage forState:UIControlStateNormal];
+
     [self startNewRound];
+    [self updataLabels];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
